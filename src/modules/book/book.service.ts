@@ -2,7 +2,8 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from '../../database/prisma.service';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
-import { Prisma, BookStatus } from '@prisma/client';
+import { Prisma } from '@prisma/client';
+import { BookStatus } from '../order/order.service';
 import { BookFilterDto } from './dto/book-filter.dto';
 
 @Injectable()

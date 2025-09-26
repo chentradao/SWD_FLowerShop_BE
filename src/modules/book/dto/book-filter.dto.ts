@@ -1,6 +1,6 @@
 import { IsOptional, IsEnum, IsNumber, IsString } from 'class-validator';
 import { Type } from 'class-transformer';
-import { BookStatus } from '@prisma/client';
+import { BookStatus } from '../../order/order.service';
 
 export class BookFilterDto {
   @IsOptional()
